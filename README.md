@@ -1,8 +1,8 @@
 # Trabalho Sistemas Distribuídos
 
-**Ideia:** Criar um chat na internet onde qualquer pessoa poderá entrar em qualquer um, bastando apenas saber o seu ID.
+**Ideia:** Criar um ambiente de desenho compartilhado, em que o desenho feito pelos usuários em uma sala, será compartilhado entre todos desta mesma sala em tempo real.
 
-**Funcionamento:** O usuário deverá apenas escolher o seu nome e o ID do chat que deseja entrar. Se o ID ainda não existir, será criado automaticamente pela aplicação. Todo o conteúdo de mensagens do chat ficará salvo.
+**Funcionamento:** O usuário deverá apenas escolher o ID da sala que deseja criar/entrar, e então, ja poderá ver e desenhar em tempo real juntamente com os outros usuários desta mesma sala. Além disso, será possivel salvar o desenho feito em uma sala.
 
 **Ferramentas:**
   - Linguagem de programaçõa: javascript.
