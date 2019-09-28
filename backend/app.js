@@ -9,8 +9,11 @@ const io = require('socket.io')(server);
 app.use(express.json());
 app.use(cors());
 
+const ids = [];
+
 io.on('connection', socket => {
-  console.log('Connection');
+  ids.push(socket.id);
+  console.log(`Connection sockedID: ${socket.id}`);
 
   if(fs.existsSync('DrawPixels/data.json')) {
     const pixels = fs.readFileSync('DrawPixels/data.json');
@@ -18,7 +21,10 @@ io.on('connection', socket => {
   }
 
   socket.on('draw', data => {
-    socket.broadcast.emit('update data', { image: data.data });
+    //socket.broadcast.emit('update data', { image: data.data });
+    for(let i = 0; i < ids.length; i++) {
+      io.to(ids[i]).emit('update data', { image: data.data });
+    }
   });
 
   socket.on('save', data => {
@@ -29,8 +35,8 @@ io.on('connection', socket => {
     });
   });
 
-  socket.on('disconnect', () =>{
-    console.log('Disconnection');
+  socket.on('disconnect', () => {
+    console.log(`Disconnection socketID: ${socket.id}`);
   });
 });
 

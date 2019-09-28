@@ -7,8 +7,6 @@
 **Ferramentas:**
   - Linguagem de programaçõa: javascript.
   - Backend: NodeJS.
-  - Frontend: ReactJS.
-  - Banco de dados NoSQL MongoDB.
   - Utilização do express para a criação do servidor.
 
 **Testes:**
