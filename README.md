@@ -2,7 +2,7 @@
 
 **Ideia:** Criar um ambiente de desenho compartilhado, em que o desenho feito pelos usuários em uma sala, será compartilhado entre todos desta mesma sala em tempo real.
 
-**Funcionamento:** O usuário deverá apenas escolher o ID da sala que deseja criar/entrar, e então, ja poderá ver e desenhar em tempo real juntamente com os outros usuários desta mesma sala. Além disso, será possivel salvar o desenho feito em uma sala.
+**Funcionamento:** O usuário deverá apenas entrar na sala e então, ja poderá ver e desenhar em tempo real juntamente com os outros usuários desta sala. Além disso, será possivel salvar o desenho feito.
 
 **Ferramentas:**
   - Linguagem de programaçõa: javascript.
